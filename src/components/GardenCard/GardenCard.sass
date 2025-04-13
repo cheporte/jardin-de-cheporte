@@ -1,0 +1,25 @@
+@use '@styles/variables'
+
+.garden-card
+  background-color: variables.$light-pink
+  border-left: 6px solid variables.$plum
+  border-radius: 1rem
+  padding: 1.5rem
+  transition: transform 0.3s ease
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05)
+
+  &:hover
+    transform: translateY(-6px)
+
+.garden-icon
+  font-size: 2rem
+  margin-bottom: 0.5rem
+
+.garden-name
+  font-size: 1.3rem
+  color: variables.$plum
+  margin-bottom: 0.3rem
+
+.garden-description
+  font-size: 1rem
+  color: variables.$dark

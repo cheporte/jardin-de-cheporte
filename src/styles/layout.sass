@@ -1,0 +1,40 @@
+@use './variables'
+
+/* General layout container */
+.layout
+    display: flex
+    flex-direction: column
+    height: 100vh
+
+/* Header */
+header
+    background-color: variables.$midnight
+    color: white
+    padding: 1rem 2rem
+    display: flex
+    justify-content: space-between
+    align-items: center
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2)
+
+    nav ul
+        display: flex
+        list-style-type: none
+        gap: 2rem
+    
+    nav a
+        color: variables.$light-pink
+        text-decoration: none
+        font-size: 1.2rem
+        font-weight: bold
+        transition: color 0.3s
+    
+        &:hover
+            color: variables.$rose
+
+/* Footer */
+footer
+    background-color: variables.$midnight
+    color: white
+    text-align: center
+    padding: 1rem
+    margin-top: auto

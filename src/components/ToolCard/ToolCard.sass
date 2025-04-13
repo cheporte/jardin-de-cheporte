@@ -1,0 +1,22 @@
+@use '@styles/variables';
+
+.tool-card
+    background-color: white
+    border-radius: 1rem
+    padding: 1.5rem
+    text-align: center
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08)
+    transition: transform 0.3s ease, box-shadow 0.3s ease
+
+    &:hover
+        transform: scale(1.05)
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15)
+
+.tool-icon
+    font-size: 2.5rem
+    margin-bottom: 1rem
+
+.tool-name
+    font-size: 1rem
+    font-weight: 600
+    color: variables.$dark

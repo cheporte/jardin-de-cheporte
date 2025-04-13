@@ -1,0 +1,85 @@
+@use 'base'
+@use 'variables'
+@use 'sass:color'
+
+.hero
+    background-color: variables.$twilight
+    color: variables.$light-pink
+    padding: 10rem 2rem
+    text-align: center
+    font-size: 2rem
+    font-weight: 600
+    border-radius: 8px
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
+    animation: fadeIn 2s ease-out
+
+    h1
+      font-size: 3rem
+      margin-bottom: 1rem
+      font-weight: bold
+
+    p
+      font-size: 1.4rem
+      margin-bottom: 2rem
+
+.tools-grid
+  display: grid
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr))
+  gap: 1rem
+  max-width: 800px
+  margin: 0 auto
+  padding-top: 1rem
+
+.gardens-grid
+  display: grid
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
+  gap: 2rem
+  max-width: 1000px
+  margin: 0 auto
+
+
+.philosophy
+  text-align: center
+  max-width: 700px
+  margin: 4rem auto 0
+  color: variables.$dark
+
+  blockquote
+    font-style: italic
+    font-size: 1.2rem
+    line-height: 1.6
+    color: variables.$plum
+    margin-bottom: 1rem
+
+    footer
+      margin-top: 0.5rem
+      font-size: 0.9rem
+      color: variables.$midnight
+      display: inline
+      background: none
+      font-style: normal
+
+  .explore-text
+    margin-top: 1rem
+    font-size: 1rem
+    color: variables.$twilight
+
+  .enter-button
+    margin-top: 2rem
+    background-color: variables.$plum
+    color: white
+    padding: 0.75rem 1.5rem
+    border-radius: 2rem
+    font-size: 1rem
+    cursor: pointer
+    border: none
+    transition: background 0.3s ease
+
+    &:hover
+      background-color: color.scale(variables.$plum, $lightness: -10%)
+
+@keyframes fadeIn
+  0%
+    opacity: 0
+  100%
+    opacity: 1
